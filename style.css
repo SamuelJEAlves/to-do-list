@@ -1,0 +1,124 @@
+body {
+    background-color: #121212;
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    background-color: #1E1E1E;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.to_do_form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.to_do_form input[type="text"], 
+.to_do_form input[type="date"] {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2A2A2A;
+    color: #FFFFFF;
+}
+
+.to_do_form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #6200EA;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.to_do_form button:hover {
+    background-color: #3700B3;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #2A2A2A;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li span {
+    flex: 1;
+}
+
+li .date {
+    margin-left: 20px;
+    color: #BBBBBB;
+}
+
+li.late {
+    background-color: #B00020;
+}
+
+.late-text {
+    color: #FFCDD2;
+    margin-left: 10px;
+}
+
+li.completed {
+    background-color: #388E3C;
+    text-decoration: line-through;
+}
+
+.complete-text {
+    color: #A5D6A7;
+    margin-left: 10px;
+}
+
+.complete-btn, .delete-btn {
+    padding: 5px 10px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.complete-btn {
+    background-color: #00796B;
+    color: #FFFFFF;
+}
+
+.complete-btn:hover {
+    background-color: #004D40;
+}
+
+.delete-btn {
+    background-color: #D32F2F;
+    color: #FFFFFF;
+}
+
+.delete-btn:hover {
+    background-color: #B71C1C;
+}
